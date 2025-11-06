@@ -209,48 +209,27 @@ footer {
   }
 }
 
-/* === TIMELINE SECTION === */
 .timeline-horizontal {
   display: flex;
-  gap: 3rem;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  padding: 2rem 0 1rem 0;
-  -webkit-overflow-scrolling: touch;
+  flex-wrap: wrap;
+  justify-content: space-between;
   position: relative;
+  padding: 2rem 0;
 }
-
-.timeline-horizontal::-webkit-scrollbar {
-  height: 6px;
-}
-.timeline-horizontal::-webkit-scrollbar-thumb {
-  background: var(--bs-primary);
-  border-radius: 10px;
-}
-.timeline-horizontal::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0.05);
-}
-
-/* Timeline line (desktop only) */
 .timeline-line {
   position: absolute;
-  top: 42px;
+  top: 35px;
   left: 0;
   right: 0;
   height: 2px;
-  background: var(--line, rgba(255, 255, 255, 0.1));
+  background: var(--line, #ccc);
   z-index: 0;
 }
-
-/* Item styling */
 .timeline-item {
   position: relative;
-  flex: 0 0 230px;
+  width: 22%;
   text-align: center;
-  scroll-snap-align: center;
-  z-index: 1;
 }
-
 .timeline-dot {
   width: 14px;
   height: 14px;
@@ -258,8 +237,8 @@ footer {
   border-radius: 50%;
   margin: 0 auto 1rem auto;
   position: relative;
+  z-index: 1;
 }
-
 .timeline-content h5 {
   font-weight: 600;
   margin-bottom: 0.3rem;
@@ -268,25 +247,17 @@ footer {
   font-size: 0.9rem;
   color: var(--bs-secondary-color);
 }
-
-/* Responsive tweaks */
 @media (max-width: 768px) {
   .timeline-horizontal {
-    gap: 2rem;
-    padding-bottom: 2rem;
+    flex-direction: column;
+    align-items: flex-start;
   }
-
   .timeline-item {
-    flex: 0 0 80%;
+    width: 100%;
     text-align: left;
-    padding-left: 1rem;
+    margin-bottom: 2rem;
   }
-
   .timeline-line {
     display: none;
-  }
-
-  .timeline-dot {
-    margin-left: 0;
   }
 }
