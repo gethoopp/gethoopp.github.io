@@ -155,6 +155,39 @@ footer {
   color: var(--muted);
 }
 
+/* Cursor shadow */
+.cursor-shadow{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 240px;
+  height: 240px;
+  pointer-events: none;
+  border-radius: 50%;
+  background: radial-gradient(circle at center,
+              rgba(99,102,241,.35) 0%,
+              rgba(99,102,241,.16) 40%,
+              rgba(99,102,241,0) 70%);
+  filter: blur(24px);
+  mix-blend-mode: screen;
+  opacity: 0;
+  transform: translate3d(var(--x, -1000px), var(--y, -1000px), 0) translate(-50%, -50%);
+  transition: opacity .25s ease;
+  z-index: 9999;
+}
+
+/* Show/hide */
+.cursor-shadow.is-visible{ opacity: .85; }
+
+/* Accessibility + mobile: hide on touch / reduced motion */
+@media (hover: none), (pointer: coarse) {
+  .cursor-shadow{ display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .cursor-shadow{ transition: none; filter: blur(18px); }
+}
+
+
 /* Utilities */
 .divider {
   height: 1px;
