@@ -210,76 +210,83 @@ footer {
 }
 
 /* === TIMELINE SECTION === */
-/* Timeline Responsif */
 .timeline-horizontal {
   display: flex;
-  flex-direction: column;
-  gap: 30px;
-  padding: 20px 0;
+  gap: 3rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 2rem 0 1rem 0;
+  -webkit-overflow-scrolling: touch;
+  position: relative;
 }
 
+.timeline-horizontal::-webkit-scrollbar {
+  height: 6px;
+}
+.timeline-horizontal::-webkit-scrollbar-thumb {
+  background: var(--bs-primary);
+  border-radius: 10px;
+}
+.timeline-horizontal::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/* Timeline line (desktop only) */
 .timeline-line {
-  display: none;
+  position: absolute;
+  top: 42px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--line, rgba(255, 255, 255, 0.1));
+  z-index: 0;
 }
 
+/* Item styling */
 .timeline-item {
-  display: flex;
-  gap: 16px;
-  align-items: flex-start;
+  position: relative;
+  flex: 0 0 230px;
+  text-align: center;
+  scroll-snap-align: center;
+  z-index: 1;
 }
 
 .timeline-dot {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
+  width: 14px;
+  height: 14px;
   background: var(--bs-primary);
-  margin-top: 4px;
-  flex-shrink: 0;
+  border-radius: 50%;
+  margin: 0 auto 1rem auto;
+  position: relative;
 }
 
 .timeline-content h5 {
-  margin-bottom: 4px;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+.timeline-content p {
+  font-size: 0.9rem;
+  color: var(--bs-secondary-color);
 }
 
-/* Jika ingin horizontal di desktop */
-@media (min-width: 992px) {
+/* Responsive tweaks */
+@media (max-width: 768px) {
   .timeline-horizontal {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    position: relative;
-  }
-
-  .timeline-line {
-    position: absolute;
-    top: 30px;
-    left: 50%;
-    width: 2px;
-    height: calc(100% - 60px);
-    background: var(--bs-primary);
-    transform: translateX(-50%);
-    display: block;
+    gap: 2rem;
+    padding-bottom: 2rem;
   }
 
   .timeline-item {
-    width: calc(50% - 30px);
-    position: relative;
+    flex: 0 0 80%;
+    text-align: left;
+    padding-left: 1rem;
   }
 
-  .timeline-item:nth-child(even) {
-    margin-left: auto;
-    text-align: right;
+  .timeline-line {
+    display: none;
   }
 
   .timeline-dot {
-    position: absolute;
-    left: calc(50% - 6px);
-    top: 0;
-    margin-top: 0;
-  }
-
-  .timeline-item:nth-child(even) .timeline-dot {
-    left: auto;
-    right: calc(50% - 6px);
+    margin-left: 0;
   }
 }
