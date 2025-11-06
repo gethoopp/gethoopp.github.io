@@ -238,7 +238,24 @@ footer {
   margin: 0 auto 1rem auto;
   position: relative;
   z-index: 1;
+  animation: blink 1s infinite alternate;
 }
+
+@keyframes blink {
+  0% {
+    background: var(--bs-primary);
+    box-shadow: 0 0 5px var(--bs-primary);
+  }
+  50% {
+    background: #fff;
+    box-shadow: 0 0 15px var(--bs-primary);
+  }
+  100% {
+    background: var(--bs-primary);
+    box-shadow: 0 0 5px var(--bs-primary);
+  }
+}
+
 .timeline-content h5 {
   font-weight: 600;
   margin-bottom: 0.3rem;
