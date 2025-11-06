@@ -209,55 +209,77 @@ footer {
   }
 }
 
+/* === TIMELINE SECTION === */
+/* Timeline Responsif */
 .timeline-horizontal {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  position: relative;
-  padding: 2rem 0;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px 0;
 }
+
 .timeline-line {
-  position: absolute;
-  top: 35px;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background: var(--line, #ccc);
-  z-index: 0;
+  display: none;
 }
+
 .timeline-item {
-  position: relative;
-  width: 22%;
-  text-align: center;
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
 }
+
 .timeline-dot {
-  width: 14px;
-  height: 14px;
-  background: var(--bs-primary);
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
-  margin: 0 auto 1rem auto;
-  position: relative;
-  z-index: 1;
+  background: var(--bs-primary);
+  margin-top: 4px;
+  flex-shrink: 0;
 }
+
 .timeline-content h5 {
-  font-weight: 600;
-  margin-bottom: 0.3rem;
+  margin-bottom: 4px;
 }
-.timeline-content p {
-  font-size: 0.9rem;
-  color: var(--bs-secondary-color);
-}
-@media (max-width: 768px) {
+
+/* Jika ingin horizontal di desktop */
+@media (min-width: 992px) {
   .timeline-horizontal {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
   }
-  .timeline-item {
-    width: 100%;
-    text-align: left;
-    margin-bottom: 2rem;
-  }
+
   .timeline-line {
-    display: none;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    width: 2px;
+    height: calc(100% - 60px);
+    background: var(--bs-primary);
+    transform: translateX(-50%);
+    display: block;
+  }
+
+  .timeline-item {
+    width: calc(50% - 30px);
+    position: relative;
+  }
+
+  .timeline-item:nth-child(even) {
+    margin-left: auto;
+    text-align: right;
+  }
+
+  .timeline-dot {
+    position: absolute;
+    left: calc(50% - 6px);
+    top: 0;
+    margin-top: 0;
+  }
+
+  .timeline-item:nth-child(even) .timeline-dot {
+    left: auto;
+    right: calc(50% - 6px);
   }
 }
