@@ -1,287 +1,261 @@
+// ===== index.html =====
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Haliim Pamungkas</title>
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-            <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="#page-top">Haliim Pamungkas</a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#signup">Contact</a></li>
-                    </ul>
-                </div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Haliim Pamungkas — Mobile Developer</title>
+    <meta name="description" content="Portfolio of Haliim Pamungkas — Mobile Developer (Flutter) with a Physics background." />
+    <meta property="og:title" content="Haliim Pamungkas — Mobile Developer" />
+    <meta property="og:description" content="Projects, experience, and contact information." />
+
+    <!-- Bootstrap 5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/4e72c0a3b6.js" crossorigin="anonymous"></script>
+
+    <!-- App styles -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-semibold text-white" href="#home">Haliim</a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav">
+          <ul class="navbar-nav ms-auto gap-1">
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <header id="home" class="hero">
+      <div class="container py-5">
+        <div class="row align-items-center justify-content-center g-4">
+          <div class="col-lg-9 text-center">
+            <div class="chip mb-3"><i class="fa-solid fa-bolt"></i> Mobile Developer (Flutter)</div>
+            <h1 class="display-4 fw-bold mb-3">Haliim Pamungkas</h1>
+            <p class="lead text-secondary mx-auto" style="max-width: 800px;">
+              Building performant, elegant apps with a scientist's mindset. Physics graduate turned software engineer—focused on clean architecture, UX polish, and maintainable code.
+            </p>
+            <div class="d-flex justify-content-center gap-2 mt-4">
+              <a href="#projects" class="btn btn-primary">View Projects</a>
+              <a href="#contact" class="btn btn-outline-light" style="border-radius:12px;">Get in Touch</a>
             </div>
-        </nav>
-        <!-- Masthead-->
-        <header class="masthead">
-            <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
-                <div class="d-flex justify-content-center">
-                    <div class="text-center">
-                        <h1 class="mx-auto my-0 text-uppercase">Haliim Pamungkas</h1>
-                        <h2 class="text-white-50 mx-auto mt-2 mb-5">A Mobile Developer. A Graduate physics . And a love to learn new thing.</h2>
-                        <a class="btn btn-primary" href="#about">Get Started</a>
-                    </div>
-                </div>
+            <div class="mt-4 social d-flex justify-content-center gap-3">
+              <a aria-label="Instagram" href="https://instagram.com/" target="_blank" rel="noopener"><i class="fa-brands fa-instagram fa-lg"></i></a>
+              <a aria-label="WhatsApp" href="https://wa.me/6282322008771?text=Hello%20Haliim%2C%20I'd%20love%20to%20learn%20more%20about%20your%20work." target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp fa-lg"></i></a>
+              <a aria-label="GitHub" href="https://github.com/gethoopp?tab=repositories" target="_blank" rel="noopener"><i class="fa-brands fa-github fa-lg"></i></a>
+              <a aria-label="Mastodon" href="https://solos.work/@haliimPamungkas" target="_blank" rel="me noopener"><i class="fa-brands fa-mastodon fa-lg"></i></a>
+              <a aria-label="Email" href="mailto:halimpamungkas9@gmail.com"><i class="fa-regular fa-envelope fa-lg"></i></a>
             </div>
-        </header>
-        <!-- About-->
-        <section class="about-section text-center" id="about">
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-4">
-                        <h2 class="text-white mb-4">Link to social media</h2>
-                        <div class="social d-flex justify-content-center">
-                            <a class="mx-2" href="#!"><i class="fab fa-instagram"></i></a>
-                            <a class="mx-2" href="https://wa.me/6282322008771?text=Hello%20haliim,%20i%20want%20know%20more%20about%20your%20service?"><i class="fab fa-whatsapp"></i></a>
-                            <a class="mx-2" href="https://github.com/gethoopp?tab=repositories"><i class="fab fa-github"></i></a>
-                            <a class="mx-2" href="https://solos.work/@haliimPamungkas"><i class="fab fa-envelope"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <img class="img-fluid" src="assets/img/ipad.png" alt="..." />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- About -->
+    <section id="about">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-6">
+            <div class="card-soft p-4 p-md-5 rounded-xl shadow-soft">
+              <h2 class="section-title">About Me</h2>
+              <p class="section-sub mb-3">
+                I'm <strong>Haliim Pamungkas Harjo Suyono</strong>, a Physics graduate based in Malang, Indonesia. I have professional experience building mobile apps with <strong>Flutter</strong> and a strong interest in crafting efficient, intuitive interfaces.
+              </p>
+              <ul class="about-list list-unstyled small">
+                <li>• Focus: Flutter, Clean Architecture, REST/GraphQL, Firebase, Appwrite</li>
+                <li>• Tooling: Dart, Git, CI/CD, Figma handoff</li>
+                <li>• Soft skills: analytical thinking, communication, shipping MVPs</li>
+              </ul>
+              <div class="d-flex gap-2 mt-3">
+                <a class="btn btn-primary" href="#projects">Explore Work</a>
+                <a class="btn btn-outline-light" style="border-radius:12px;" href="https://github.com/gethoopp?tab=repositories" target="_blank" rel="noopener">GitHub</a>
+              </div>
             </div>
-        </section>
-        <!-- Projects-->
-        <section class="projects-section bg-light" id="projects">
-            <div class="container px-4 px-lg-5">
-                <!-- Featured Project Row-->
-                <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/H.png" alt="..." /></div>
-                   <div class="col-xl-4 col-lg-5">
-  <div class="featured-text text-center text-lg-left">
-    <h4>About Me</h4>
-    <p class="text-black-50 mb-0">
-      Halo, saya <strong>Haliim Pamungkas Harjo Suyono</strong>, lulusan <strong>Fisika</strong> dari salah satu universitas negeri di Malang. 
-      Saya memiliki pengalaman profesional selama satu tahun dalam pengembangan aplikasi menggunakan <strong>Flutter</strong>. 
-      Dengan latar belakang analitis dari dunia Fisika dan ketertarikan mendalam terhadap teknologi, saya berfokus pada 
-      pembuatan aplikasi yang efisien, intuitif, dan memiliki performa tinggi.
-    </p>
-  </div>
-</div>
-
-               
- 
-                <!-- Project Two Row-->
-                <div class="row gx-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/3.jpg" alt="..." /></div>
-                    <div class="col-lg-6 order-lg-first">
-                        <div class="bg-black text-center h-100 project">
-                            <div class="d-flex h-100">
-                                <div class="project-text w-100 my-auto text-center text-lg-right">
-                                    <h4 class="text-white">Foodies APP</h4>
-                                    <p class="mb-0 text-white-50"></p>
-                                    <hr class="d-none d-lg-block mb-0 me-0" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/kopikita.png" alt="..." /></div>
-                    <div class="col-lg-6">
-                        <div class="bg-black text-center h-100 project">
-                            <div class="d-flex h-100">
-                                <div class="project-text w-100 my-auto text-center text-lg-left">
-                                    <h4 class="text-white">Kopi Kita</h4>
-                                    <p class="mb-0 text-white-50"></p>
-                                    <hr class="d-none d-lg-block mb-0 ms-0" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row gx-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/MONEY.jpg" alt="..." /></div>
-                    <div class="col-lg-6 order-lg-first">
-                        <div class="bg-black text-center h-100 project">
-                            <div class="d-flex h-100">
-                                <div class="project-text w-100 my-auto text-center text-lg-right">
-                                    <h4 class="text-white">MONEY APP</h4>
-                                    <p class="mb-0 text-white-50"></p>
-                                    <hr class="d-none d-lg-block mb-0 me-0" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/booky.png" alt="..." /></div>
-                    <div class="col-lg-6">
-                        <div class="bg-black text-center h-100 project">
-                            <div class="d-flex h-100">
-                                <div class="project-text w-100 my-auto text-center text-lg-left">
-                                    <h4 class="text-white">Booky App</h4>
-                                    <p class="mb-0 text-white-50"></p>
-                                    <hr class="d-none d-lg-block mb-0 ms-0" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row gx-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/uptodo.jpg" alt="..." /></div>
-                    <div class="col-lg-6 order-lg-first">
-                        <div class="bg-black text-center h-100 project">
-                            <div class="d-flex h-100">
-                                <div class="project-text w-100 my-auto text-center text-lg-right">
-                                    <h4 class="text-white">UpTodo</h4>
-                                    <p class="mb-0 text-white-50"></p>
-                                    <hr class="d-none d-lg-block mb-0 me-0" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/traver.png" alt="..." /></div>
-                    <div class="col-lg-6">
-                        <div class="bg-black text-center h-100 project">
-                            <div class="d-flex h-100">
-                                <div class="project-text w-100 my-auto text-center text-lg-left">
-                                    <h4 class="text-white">Traver App</h4>
-                                    <p class="mb-0 text-white-50"></p>
-                                    <hr class="d-none d-lg-block mb-0 ms-0" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Zona Mahasiswa Portofolio-->
-                <div class="row gx-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/zona-mahasiswa.png" alt="..." /></div>
-                    <div class="col-lg-6 order-lg-first">
-                        <div class="bg-black text-center h-100 project">
-                            <div class="d-flex h-100">
-                                <div class="project-text w-100 my-auto text-center text-lg-right">
-                                    <h4 class="text-white">forHat: Temukan Zona Mahasiswa</h4>
-                                    <p class="mb-0 text-white-50"></p>
-                                    <hr class="d-none d-lg-block mb-0 me-0" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+          </div>
+          <div class="col-lg-6">
+            <div class="row g-3">
+              <div class="col-6"><img class="w-100 rounded-xl" src="assets/img/H.png" alt="Haliim showcase" loading="lazy" /></div>
+              <div class="col-6"><img class="w-100 rounded-xl" src="assets/img/ipad.png" alt="App preview" loading="lazy" /></div>
+              <div class="col-12"><div class="card-soft p-4 rounded-xl h-100">
+                <p class="mb-0 muted">Currently open for freelance/contract opportunities. I enjoy collaborating with founders and teams to ship purposeful products.</p>
+              </div></div>
             </div>
-        </section>
-        <!-- Signup-->
-        <section class="signup-section" id="signup">
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5">
-                    <div class="col-md-10 col-lg-8 mx-auto text-center">
-                        <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-                        <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- * * SB Forms Contact Form * *-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- This form is pre-integrated with SB Forms.-->
-                        <!-- To make this form functional, sign up at-->
-                        <!-- https://startbootstrap.com/solution/contact-forms-->
-                        <!-- to get an API token!-->
-                        <form class="form-signup" id="contactForm" data-sb-form-api-token="API_TOKEN">
-                            <!-- Email address input-->
-                            <div class="row input-group-newsletter">
-                                <div class="col"><input class="form-control" id="emailAddress" type="email" placeholder="Enter email address..." aria-label="Enter email address..." data-sb-validations="required,email" /></div>
-                                <div class="col-auto"><button class="btn btn-primary disabled" id="submitButton" type="submit">Notify Me!</button></div>
-                            </div>
-                            <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:required">An email is required.</div>
-                            <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:email">Email is not valid.</div>
-                            <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3 mt-2 text-white">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                    To activate this form, sign up at
-                                    <br />
-                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                                </div>
-                            </div>
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3 mt-2">Error sending message!</div></div>
-                        </form>
-                    </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- Projects -->
+    <section id="projects">
+      <div class="container">
+        <div class="row mb-4 align-items-end">
+          <div class="col-md-8">
+            <h2 class="section-title mb-1">Selected Projects</h2>
+            <p class="section-sub mb-0">A snapshot of apps and experiments. More on my GitHub.</p>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <!-- Project: Foodies App -->
+          <div class="col-md-6 col-lg-4">
+            <article class="project-card h-100">
+              <img class="project-media" src="assets/img/3.jpg" alt="Foodies App UI preview" loading="lazy" />
+              <div class="p-3 p-md-4">
+                <h3 class="h5 project-title mb-1">Foodies App</h3>
+                <p class="project-meta mb-3">Recipe & ordering experience with offline cache, state management, and smooth animations.</p>
+                <div class="d-flex gap-2">
+                  <span class="badge text-bg-dark border" style="border-color:var(--line)">Flutter</span>
+                  <span class="badge text-bg-dark border" style="border-color:var(--line)">Provider</span>
                 </div>
-            </div>
-        </section>
-        <!-- Contact-->
-        <section class="contact-section bg-black">
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5">
-                    <div class="col-md-4 mb-3 mb-md-0">
-                        <div class="card py-4 h-100">
-                            <div class="card-body text-center">
-                                <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-                                <h4 class="text-uppercase m-0">Address</h4>
-                                <hr class="my-4 mx-auto" />
-                                <div class="small text-black-50">Malang, Indonesia</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-3 mb-md-0">
-                        <div class="card py-4 h-100">
-                            <div class="card-body text-center">
-                                <i class="fas fa-envelope text-primary mb-2"></i>
-                                <h4 class="text-uppercase m-0">Email</h4>
-                                <hr class="my-4 mx-auto" />
-                                <div class="small text-black-50"><a href="#!">halimpamungkas9@gmail.com</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-3 mb-md-0">
-                        <div class="card py-4 h-100">
-                            <div class="card-body text-center">
-                                <i class="fas fa-mobile-alt text-primary mb-2"></i>
-                                <h4 class="text-uppercase m-0">Phone</h4>
-                                <hr class="my-4 mx-auto" />
-                                <div class="small text-black-50">+62 823-2200-8771</div>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Project: Kopi Kita -->
+          <div class="col-md-6 col-lg-4">
+            <article class="project-card h-100">
+              <img class="project-media" src="assets/img/kopikita.png" alt="Kopi Kita app preview" loading="lazy" />
+              <div class="p-3 p-md-4">
+                <h3 class="h5 project-title mb-1">Kopi Kita</h3>
+                <p class="project-meta mb-3">Cafe loyalty & ordering app with QR membership and push notifications.</p>
+                <div class="d-flex gap-2">
+                  <span class="badge text-bg-dark border" style="border-color:var(--line)">Flutter</span>
+                  <span class="badge text-bg-dark border" style="border-color:var(--line)">Firebase</span>
                 </div>
-                
+              </div>
+            </article>
+          </div>
+
+          <!-- Project: Money App -->
+          <div class="col-md-6 col-lg-4">
+            <article class="project-card h-100">
+              <img class="project-media" src="assets/img/MONEY.jpg" alt="Money App finance UI preview" loading="lazy" />
+              <div class="p-3 p-md-4">
+                <h3 class="h5 project-title mb-1">Money App</h3>
+                <p class="project-meta mb-3">Personal finance tracker with charts, budgets, and import/export.</p>
+                <div class="d-flex gap-2">
+                  <span class="badge text-bg-dark border" style="border-color:var(--line)">Flutter</span>
+                  <span class="badge text-bg-dark border" style="border-color:var(--line)">Bloc</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Project: Booky App -->
+          <div class="col-md-6 col-lg-4">
+            <article class="project-card h-100">
+              <img class="project-media" src="assets/img/booky.png" alt="Booky App preview" loading="lazy" />
+              <div class="p-3 p-md-4">
+                <h3 class="h5 project-title mb-1">Booky App</h3>
+                <p class="project-meta mb-3">Reader with cloud storage integration and metadata fetching.</p>
+                <div class="d-flex gap-2">
+                  <span class="badge text-bg-dark border" style="border-color:var(--line)">Flutter</span>
+                  <span class="badge text-bg-dark border" style="border-color:var(--line)">Appwrite</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Project: UpTodo -->
+          <div class="col-md-6 col-lg-4">
+            <article class="project-card h-100">
+              <img class="project-media" src="assets/img/uptodo.jpg" alt="UpTodo productivity app preview" loading="lazy" />
+              <div class="p-3 p-md-4">
+                <h3 class="h5 project-title mb-1">UpTodo</h3>
+                <p class="project-meta mb-3">Task management with reminders and calendar sync.</p>
+                <div class="d-flex gap-2">
+                  <span class="badge text-bg-dark border" style="border-color:var(--line)">Flutter</span>
+                  <span class="badge text-bg-dark border" style="border-color:var(--line)">Hive</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Project: Traver App -->
+          <div class="col-md-6 col-lg-4">
+            <article class="project-card h-100">
+              <img class="project-media" src="assets/img/traver.png" alt="Traver travel app preview" loading="lazy" />
+              <div class="p-3 p-md-4">
+                <h3 class="h5 project-title mb-1">Traver App</h3>
+                <p class="project-meta mb-3">Trip planning with offline maps and saved places.</p>
+                <div class="d-flex gap-2">
+                  <span class="badge text-bg-dark border" style="border-color:var(--line)">Flutter</span>
+                  <span class="badge text-bg-dark border" style="border-color:var(--line)">SQLite</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Project: forHat / Zona Mahasiswa -->
+          <div class="col-md-6 col-lg-4">
+            <article class="project-card h-100">
+              <img class="project-media" src="assets/img/zona-mahasiswa.png" alt="forHat Zona Mahasiswa app preview" loading="lazy" />
+              <div class="p-3 p-md-4">
+                <h3 class="h5 project-title mb-1">forHat — Zona Mahasiswa</h3>
+                <p class="project-meta mb-3">Discovery tool for student-friendly spots and perks.</p>
+                <div class="d-flex gap-2">
+                  <span class="badge text-bg-dark border" style="border-color:var(--line)">Flutter</span>
+                  <span class="badge text-bg-dark border" style="border-color:var(--line)">Maps</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="p-4 p-md-5 contact-cta card-soft shadow-soft">
+              <h2 class="section-title">Let’s build something great</h2>
+              <p class="section-sub">Prefer WhatsApp or email? Reach out through the buttons below.</p>
+              <div class="d-flex flex-wrap gap-2 mt-3">
+                <a class="btn btn-primary" href="https://wa.me/6282322008771?text=Hi%20Haliim%2C%20I%27m%20interested%20in%20your%20mobile%20development%20services." target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp me-2"></i>WhatsApp</a>
+                <a class="btn btn-outline-light" style="border-radius:12px;" href="mailto:halimpamungkas9@gmail.com"><i class="fa-regular fa-envelope me-2"></i>Email</a>
+                <a class="btn btn-outline-light" style="border-radius:12px;" href="https://github.com/gethoopp?tab=repositories" target="_blank" rel="noopener"><i class="fa-brands fa-github me-2"></i>GitHub</a>
+              </div>
+              <div class="mt-4 small muted">
+                Malang, Indonesia · Available for remote work
+              </div>
             </div>
-        </section>
-        <!-- Footer-->
-        <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright </div></footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-    </body>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-4">
+      <div class="container small d-flex flex-column flex-sm-row justify-content-between align-items-center">
+        <div>© <span id="year"></span> Haliim Pamungkas</div>
+        <div class="mt-2 mt-sm-0">Built with <a class="text-decoration-none" href="https://getbootstrap.com/" target="_blank" rel="noopener">Bootstrap</a></div>
+      </div>
+    </footer>
+
+    <!-- Vendor JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- App JS -->
+    <script src="js/main.js"></script>
+  </body>
 </html>
+
+
+
+
