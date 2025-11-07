@@ -156,7 +156,7 @@ footer {
 }
 
 /* Cursor shadow */
-.cursor-shadow{
+.cursor-shadow {
   position: fixed;
   top: 0;
   left: 0;
@@ -165,9 +165,9 @@ footer {
   pointer-events: none;
   border-radius: 50%;
   background: radial-gradient(circle at center,
-              rgba(99,102,241,.35) 0%,
-              rgba(99,102,241,.16) 40%,
-              rgba(99,102,241,0) 70%);
+      rgba(99, 102, 241, .35) 0%,
+      rgba(99, 102, 241, .16) 40%,
+      rgba(99, 102, 241, 0) 70%);
   filter: blur(24px);
   mix-blend-mode: screen;
   opacity: 0;
@@ -177,14 +177,23 @@ footer {
 }
 
 /* Show/hide */
-.cursor-shadow.is-visible{ opacity: .85; }
+.cursor-shadow.is-visible {
+  opacity: .85;
+}
 
 /* Accessibility + mobile: hide on touch / reduced motion */
-@media (hover: none), (pointer: coarse) {
-  .cursor-shadow{ display: none; }
+@media (hover: none),
+(pointer: coarse) {
+  .cursor-shadow {
+    display: none;
+  }
 }
+
 @media (prefers-reduced-motion: reduce) {
-  .cursor-shadow{ transition: none; filter: blur(18px); }
+  .cursor-shadow {
+    transition: none;
+    filter: blur(18px);
+  }
 }
 
 
@@ -216,6 +225,7 @@ footer {
   position: relative;
   padding: 2rem 0;
 }
+
 .timeline-line {
   position: absolute;
   top: 35px;
@@ -225,11 +235,13 @@ footer {
   background: var(--line, #ccc);
   z-index: 0;
 }
+
 .timeline-item {
   position: relative;
   width: 22%;
   text-align: center;
 }
+
 .timeline-dot {
   width: 14px;
   height: 14px;
@@ -246,10 +258,12 @@ footer {
     background: var(--bs-primary);
     box-shadow: 0 0 5px var(--bs-primary);
   }
+
   50% {
     background: #fff;
     box-shadow: 0 0 15px var(--bs-primary);
   }
+
   100% {
     background: var(--bs-primary);
     box-shadow: 0 0 5px var(--bs-primary);
@@ -260,20 +274,24 @@ footer {
   font-weight: 600;
   margin-bottom: 0.3rem;
 }
+
 .timeline-content p {
   font-size: 0.9rem;
   color: var(--bs-secondary-color);
 }
+
 @media (max-width: 768px) {
   .timeline-horizontal {
     flex-direction: column;
     align-items: flex-start;
   }
+
   .timeline-item {
     width: 100%;
     text-align: left;
     margin-bottom: 2rem;
   }
+
   .timeline-line {
     display: none;
   }
